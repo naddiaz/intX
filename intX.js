@@ -8,7 +8,10 @@ var intX = function(id){
     for(i in ids){
       text = text[ids[i]]
     }
-    return text;
+    if(text != undefined)
+      return text;
+    else
+      return id;
   }
 
   function isDefined(){
@@ -30,12 +33,14 @@ var intX = function(id){
   function load(){
     var elements = getAllElementsWithAttribute('intx');
     for(i in elements){
-      elements[i].innerHTML = read(elements[i].attributes.intx.value);
+      if(elements[i].attributes.intx.value != undefined)
+        elements[i].innerHTML = read(elements[i].attributes.intx.value);
     }
 
     var tags = document.getElementsByTagName('intx');
     for(i in tags){
-      tags[i].innerHTML = read(tags[i].attributes.label.value);
+      if(tags[i].innerHTML != undefined)
+        tags[i].innerHTML = read(tags[i].attributes.label.value);
     }
   }
 
