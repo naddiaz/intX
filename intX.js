@@ -38,8 +38,11 @@ var intX = function(id){
     }
 
     var tags = document.getElementsByTagName('intx');
-    for(i in tags){
-      if(tags[i].innerHTML != undefined)
+    console.log(tags)
+    for(var i=0; i<tags.length; i++){
+      if(tags[i].innerHTML != undefined && tags[i].innerHTML != "")
+        tags[i].innerHTML = read(tags[i].innerHTML);
+      else if(tags[i].attributes != undefined)
         tags[i].innerHTML = read(tags[i].attributes.label.value);
     }
   }
