@@ -1,0 +1,23 @@
+{
+  "name": "intX",
+  "version": "1.0.0",
+  "homepage": "https://github.com/naddiaz/intX",
+  "authors": [
+    "Néstor Álvarez Díaz <naddiaz.92@gmail.com>"
+  ],
+  "description": "This library allows to manage the internationalization of text into HTML with JavaScript",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "javascript",
+    "internationalization"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
