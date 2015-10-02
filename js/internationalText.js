@@ -3,7 +3,7 @@ var internationalText = {
   es: {
     title: 'Título de la página',
     page: {
-      title: "Título del H1"
+      welcome: "Bienvenido"
     },
     table: {
       title: {
@@ -19,7 +19,7 @@ var internationalText = {
   en: {
     title: 'Web title',
     page: {
-      title: "H1 title"
+      welcome: "Welcome"
     },
     table: {
       title: {

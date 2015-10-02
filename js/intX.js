@@ -32,6 +32,11 @@ var intX = function(id){
     for(i in elements){
       elements[i].innerHTML = read(elements[i].attributes.intx.value);
     }
+
+    var tags = document.getElementsByTagName('intx');
+    for(i in tags){
+      tags[i].innerHTML = read(tags[i].attributes.label.value);
+    }
   }
 
   function getAllElementsWithAttribute(attribute){
