@@ -54,6 +54,13 @@ new intX();
 #### Note
 If you add dynamic content and it uses the __intX__ library, you should relaunch anew the contructor function. This action is necessary because this library works in execution time. 
 
+### Extension of library
+You can use the __intx html tag__ with attribute __label__ if you need add international and static text in the same tag. It's shown in the following example:
+
+```html
+<h1><intx label="page.welcome"></intx> naddiaz</h1>
+```
+
 ## ¿Cómo funciona?
 
 En primer lugar, es necesario añadir el fichero de la librería ya sea en su __versión comprimida__ o en la __versión normal__. Previamente a este fichero es necesario incluir el fichero de textos internacionalizados, tal y como se muestra acontinuación:
@@ -100,3 +107,10 @@ new intX();
 
 #### Nota
 Si añade contenido dinámico y éste hace uso de la librería __intX__ es necesario que ejecute nuevamente el contructor para reconstruir los textos que se han añadido.
+
+### Ampliación de la librería
+Puede utilizar __la etiqueta intx__ con el atributo __label__ cuando necesite añadir contenido estático e internacionalizado en la misma etiqueta html. Tal y como se muestra en el siguiente ejemplo:
+
+```html
+<h1><intx label="page.welcome"></intx> naddiaz</h1>
+```
