@@ -11,12 +11,23 @@ var intX = function(id){
     return text;
   }
 
+  function isDefined(){
+    var keys = Object.keys(internationalText);
+    var i = 0;
+    while(i < keys.length){
+      if(keys[i] == language)
+        return true;
+      i++;
+    }
+    return false;
+  }
+
   function getLang(){
     return navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
   }
 
 
-  function loadIntX(){
+  function load(){
     var elements = getAllElementsWithAttribute('intx');
     for(i in elements){
       elements[i].innerHTML = read(elements[i].attributes.intx.value);
@@ -36,6 +47,9 @@ var intX = function(id){
 
   (function(){
     language = getLang();
-    loadIntX();
+    if(!isDefined()){
+      language = internationalText._def;
+    }
+    load();
   })();
 }

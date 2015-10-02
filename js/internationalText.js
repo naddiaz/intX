@@ -1,4 +1,5 @@
 var internationalText = {
+  _def: "es",
   es: {
     title: 'Título de la página',
     page: {
